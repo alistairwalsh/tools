@@ -11,6 +11,13 @@ git config --global user.name "alistairwalsh"
 git config --global user.email alistair.walsh@me.com
 git config --global credential.helper cache
 # Set git to use the credential memory cache
+<<<<<<< HEAD
+=======
+
+git config --global credential.helper 'cache --timeout=3600'
+# Set the cache to timeout after 1 hour (setting is in seconds)
+git commit --amend --reset-author
+>>>>>>> ed97774a724a053f45d53120aca47fdb5145f1de
 
 git config --global credential.helper 'cache --timeout=3600'
 # Set the cache to timeout after 1 hour (setting is in seconds)
