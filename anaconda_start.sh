@@ -7,6 +7,9 @@ bash Anaconda-2.2.0-Linux-x86_64.sh -b
 echo "export PATH=~/anaconda/bin:$PATH" >> .bashrc 
 conda update conda
 sudo apt-get update && sudo apt-get install git-core -y
+git config --global user.name "alistairwalsh"
+git config --global user.email alistair.walsh@me.com
+git commit --amend --reset-author
 
 conda config --add channels http://conda.binstar.org/jorge
 
