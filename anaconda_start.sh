@@ -9,6 +9,11 @@ conda update conda
 sudo apt-get update && sudo apt-get install git-core -y
 git config --global user.name "alistairwalsh"
 git config --global user.email alistair.walsh@me.com
+git config --global credential.helper cache
+# Set git to use the credential memory cache
+
+git config --global credential.helper 'cache --timeout=3600'
+# Set the cache to timeout after 1 hour (setting is in seconds)
 git commit --amend --reset-author
 
 conda config --add channels http://conda.binstar.org/jorge
